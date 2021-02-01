@@ -2848,7 +2848,7 @@ ul.actions.fit.stacked {
 }
 
 @media screen and (max-width: 480px) {
-  ul.actions:not(.fixed) {
+  /* ul.actions:not(.fixed) {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -2893,7 +2893,7 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li button.icon:before,
   ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5rem;
-  }
+  } */
 }
 
 /* Icons */
@@ -3358,9 +3358,9 @@ table.alt tbody tr td {
   background-size: auto, auto, 100% auto;
   background-position: center, center, top center;
   background-repeat: repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
+  background-attachment: scroll, scroll, fixed;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.25;
 }
 
 #wrapper > .bg.fixed {
@@ -3396,7 +3396,7 @@ body.is-preload #wrapper.fade-in:before {
 
 @media screen and (orientation: portrait) {
   #wrapper > .bg {
-    background-size: auto, auto, auto 75%;
+    background-size: auto, auto, auto 90%;
   }
 }
 
@@ -3874,9 +3874,6 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 @media screen and (max-width: 980px) {
-  #nav {
-    display: none;
-  }
 }
 
 /* Main */
